@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: sans-serif;
+}
+
+body {
+  background: blanchedalmond;
+  text-align: center;
+}
+
+button:focus {
+  outline: none;
+}
+
+.dropmenu-container {
+  display: inline-block;
+  position: relative;
+  width: 10em;
+  margin-top: 1em;
+}
+
+.dropmenu-activate {
+  width: 100%;
+  font-size: 1.25em;
+  height: 2em;
+  background: lightskyblue;
+  color: white;
+}
+
+.dropmenu-activate:hover {
+  background: dodgerblue;
+}
+
+.dropmenu-content {
+  width: 10em;
+  position: absolute;
+  top: 2.7em;
+  visibility: hidden;
+}
+
+.dropmenu-option {
+  width: 100%;
+  font-size: 1.25em;
+  height: 2em;
+  background: lightskyblue;
+  color: white;
+  border-top: .1em solid blanchedalmond;
+}
+
+.dropmenu-option:hover {
+  background: dodgerblue;
+}
+
+.dropmenu-sub-content {
+  visibility: visible;
+}
+
+.visible + .dropmenu-content {
+  visibility: visible;
+}
+
+.visible {
+  background: dodgerblue;
+}
