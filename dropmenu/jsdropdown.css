@@ -58,6 +58,11 @@ button:focus {
   background: #393d5c;
 }
 
+.dropmenu-option:active {
+  background: orange;
+  transition: all .075s;
+}
+
 .visible + .dropmenu-content {
   visibility: visible;
   opacity: 1;
